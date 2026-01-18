@@ -1,150 +1,240 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamb4Allaah | Writer</title>
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<head>
+		<title>Miniport by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Home</a></li>
+					<li><a href="#work">Karya</a></li>
+					<li><a href="#portfolio">Jurnal</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+<span class="image" style="display: block; text-align: center;">
+    <img src="images/pprofil.png" alt="" style="width: 100%; max-width: 300px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 50%;" />
+</span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+    <h1>Halo, saya<strong> hamba Allaah</strong>.</h1>
+    <p>Selamat datang di jurnal pribadi Asmaryadi, tempat berbagi ide, pemikiran dan teknologi.</p>
+</header>
+
+<article id="about" class="container box style1" style="
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ieu meh aya efek parallax pas di-scroll */
+    color: #ffffff;
+    border: none;
+">
+    <div class="inner" style="padding: 4em 2em;">
+        <header>
     <style>
-        /* --- 1. DEFINISI WARNA DASAR (PENTING BIAR GELAP) --- */
-        :root {
-            --bg-color: #0f172a;       /* Latar Belakang Gelap */
-            --card-bg: #1e293b;        /* Warna Kotak Link */
-            --text-color: #f8fafc;     /* Warna Teks Putih */
-            --accent-color: #38bdf8;   /* Biru Tech */
-            --emerald-green: #10b981;  /* Hijau Emerald */
+        /* Ieu kode jang ngarobah warna bold jadi Green Emerald */
+        strong {
+            color: #50C878 !important;
+            font-weight: 700;
         }
 
-        /* --- 2. PENGATURAN POSISI DI TENGAH --- */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            display: flex;             /* Ini kuncinya biar di tengah */
-            justify-content: center;   /* Tengah secara horizontal */
-            align-items: center;       /* Tengah secara vertikal */
-            min-height: 100vh;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 400px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .profile-img {
-            width: 96px;
-            height: 96px;
-            border-radius: 50%;
-            border: 3px solid var(--accent-color);
-            margin-bottom: 15px;
-            object-fit: cover;
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            margin: 10px 0 5px;
-            letter-spacing: 1px;
-        }
-
-        p {
-            font-size: 0.9rem;
-            color: #94a3b8;
-            margin-bottom: 25px;
-            line-height: 1.4;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        /* --- 3. STYLE TOMBOL LINK --- */
-        .link-card {
-            background-color: var(--card-bg);
-            padding: 16px;
-            border-radius: 12px;
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 600;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            display: block;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Tombol Ebook (Paling Menonjol) */
-        .featured {
-            background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
-            border: none;
-        }
-        .featured:hover {
-            background: linear-gradient(135deg, #38bdf8 0%, #3b82f6 100%);
-            transform: scale(1.02);
-            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
-        }
-
-        /* --- 4. BRANDING COLORS (WARNA WARNI PAS DI-HOVER) --- */
-        .blog-brand:hover { border-color: #F59E0B; box-shadow: 0 0 10px rgba(245, 158, 11, 0.3); color: #F59E0B; transform: scale(1.02); }
-        .fb-brand:hover { border-color: #1877F2; box-shadow: 0 0 10px rgba(24, 119, 242, 0.3); color: #1877F2; transform: scale(1.02); }
-        .yt-brand:hover { border-color: #FF0000; box-shadow: 0 0 10px rgba(255, 0, 0, 0.3); color: #FF0000; transform: scale(1.02); }
-        .li-brand:hover { border-color: #0A66C2; box-shadow: 0 0 10px rgba(10, 102, 194, 0.3); color: #0A66C2; transform: scale(1.02); }
-        .wa-brand:hover { border-color: #25D366; box-shadow: 0 0 10px rgba(37, 211, 102, 0.3); color: #25D366; transform: scale(1.02); }
-
-        /* --- 5. FOOTER HIJAU EMERALD --- */
-        .footer {
-            margin-top: 40px;
-            font-size: 0.8rem;
-            color: var(--emerald-green); /* Ini yang bikin ijo emerald */
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            opacity: 0.9;
+        /* Tambahan meh link dina button ogé leuwih kontras mun diperlukeun */
+        .button.style2 {
+            border-color: #50C878;
+            color: #50C878 !important;
         }
     </style>
 </head>
-<body>
+            <h2 style="color: #ffffff;">The Architect of <br />
+            <strong>be COOL Person</strong></h2>
+        </header>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.2em; line-height: 1.8;">
+            bukan hanya sekedar menulis, tapi membangun pondasi. saya percaya bahwa karya yang sebenernya bukan hanya huruf di kertas, tapi hidupnya karakter yang memberi manfaat untuk sesama.
+        </p>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.2em; line-height: 1.8;">
+            lewat <em>blueprint</em> <strong>be COOL person</strong>, saya memilih menjadi bayangan memberi jalan untuk para <strong>sahabat</strong> supaya mereka bisa lebih dulu bersinar dan mandiri. 
+        </p>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.2em; line-height: 1.8;">
+            Sebab buat saya, kesuksésan sebenernya yaitu ketika kita bisa tumbuh bareng dalam kebaikan, sambil tetap menjaga hakikat selaku <strong>Hamba Allah</strong> yang terus belajar.
+        </p>
+    </div>
+</article>
+<p></p>
+							<a href="#work" class="button large scrolly">Learn about what I do</a>
+						</div>
+					</div>
+				</div>
+			</article>
 
-    <div class="container">
-        <img src="pprofil.png" alt="foto profil" class="profile-img">
-        
-        <h1>Hamb4Allaah | Writer | Team Leader</h1>
-        <h2>IT Enthusiast</h2>
-        <p>Cloud, Network & Laptop Specialist</p>
-        
-        <div class="links">
-            <a href="https://buku1.hamb4allaah.my.id" class="link-card blog-brand">
-                🚀 BELI EBOOK: be COOL Person
-            </a>
-
-            <a href="https://blog.hamb4allaah.my.id" class="link-card blog-brand">
-                📖 Blog Riset & Tulisan Teknis
-            </a>
-
-            <a href="https://www.facebook.com/h4mbaAllaah" class="link-card fb-brand">
-                👥 Facebook Fanpage Community (4K+ Followers)
-            </a>
-
-            <a href="https://youtube.com/@hamb4allaah" class="link-card yt-brand">
-                📺 YouTube Tech Project (Rising)
-            </a>
-
-            <a href="https://www.linkedin.com/in/username-lo" class="link-card li-brand">
-                💼 LinkedIn Professional Profile
-            </a>
-
-            <a href="https://wa.me/6281543333877" class="link-card wa-brand">
-                💬 Konsultasi Proyek (Direct WA)
-            </a>
-        </div>
-
-        <div class="footer">
-            &copy; 2026 TW1NST3CH | Self-Hosted on GitHub & Blogger
-        </div>
+		<!-- Work -->
+	<section id="work" class="main style1">
+    <div class="row aln-center" style="padding: 0 10%; justify-content: center;">
+    
+    <div class="col-4 col-6-medium col-12-small">
+        <section class="box style1" style="padding: 2em 1.5em;">
+            <div style="font-size: 40px; margin-bottom: 15px;">📚</div>
+            <h3>Karya Tulis</h3>
+            <p>Daftar buku yang telah rilis resmi di Google Playbook dan siap dibaca.</p>
+            <footer>
+                <a href="https://buku1.hamb4allaah.my.id" class="button alt">Lihat Buku</a>
+            </footer>
+        </section>
     </div>
 
-</body>
+    <div class="col-4 col-6-medium col-12-small">
+        <section class="box style1" style="padding: 2em 1.5em;">
+            <div style="font-size: 40px; margin-bottom: 15px;">🎬</div>
+            <h3>Video Edukasi</h3>
+            <p>karena era konten, kami mencoba juga untuk hadir disini.</p>
+            <footer>
+                <a href="https://youtube.com/@hamb4allaah" class="button alt" target="_blank">Tonton Video</a>
+            </footer>
+        </section>
+    </div>
+
+    <div class="col-4 col-6-medium col-12-small">
+        <section class="box style1" style="padding: 2em 1.5em;">
+            <div style="font-size: 40px; margin-bottom: 15px;">👥</div>
+            <h3>Fanpage</h3>
+            <p>semua berawal dari sini sejak 15 tahun yang lalu, bergabunglah dengan </<strong>4.000+</strong> pengikut di Facebook.</p>
+            <footer>
+                <a href="https://www.facebook.com/h4mbaAllaah" class="button alt" target="_blank">Ikuti Sekarang</a>
+            </footer>
+        </section>
+    </div>
+</div>
+        <footer style="text-align: center; width: 100%; margin-top: 3em; clear: both;">
+    <p style="margin-bottom: 1em;">Ingin melihat tulisan lainnya?</p>
+    <a href="#portfolio" class="button scrolly">See some of my work</a>
+</footer>
+
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2><a href="https://blog.hamb4allaah.my.id" target="_blank" style="text-decoration: none; color: inherit;">Jurnal & Catatan Digital</a></h2>
+						<p>Beberapa Jurnal dan Catatan Digital</p>
+					</header>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="https://blog.hamb4allaah.my.id/2018/11/krisis-ideologi.html" class="image featured"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYW1aMuZ6Q0OspWr9QDBVJ4u3mdsX4gfVXqGuwqpnIGNbWD5BnZDWri5GNAYRo9gW6A7plxewP5tw3kRRUBJjTS3SUAZTP4PBoceXo-fJU8HSyUnIXkF7tAMZyLCbNWfvvqpNTI-RfrRw/s640/agag.png" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center;"/></a>
+								<h3><a href="#">Krisis Ideologi</a></h3>
+								<p>kekacauan terjadi bukan karena kurangnya orang pintar</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="" class="image featured"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcghY_JFZTj8puIhso-Nh6jikqPw4_CbQIiQO4r4gsvOjiVHeBlj6w6PFzeDy08Z3Dcr93OOd_GmKhgqZLwhuqKIwjq3PR5LxjnaiNWjw34h-5rkJxZXkR725YBffQj1B00qAOd3D3EzI/s320/Hari-Anak-Sedunia-Sebuah-Perspektif-budakbageer.blogspot.com_.png" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center;" /></a>
+								<h3><a href="https://blog.hamb4allaah.my.id/2017/05/dunia-anak-anak-yang-mulai-hilang.html">dunia anak yang mulai hilang</a></h3>
+								<p>kepolosan anak yang suka bermain kini..</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="https://blog.hamb4allaah.my.id/2025/12/banjir-rasisme-dan-skandal.html" class="image featured"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3jbElepxt2XS0BgXL8g8KD-CwcKJYTU8GuKcmAiehHA_ytBfJ_FemqQBUc8rfAlAi97pBQdcfZclJntLl_udHYCl1hz2aeTSbm1LU_4v4KNCos2U6hgoNzbYkzIIifVNuywv0whgSNYvsBQyx1MDAFFl3Px6Ist-0cClPkIzmVZo2gL7rKMzXH2kuQX0/s320/banjir,%20rasis%20dan%20skandal%20dimana%20nurani%20kita_.jpg" alt="" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center;"/></a>
+								<h3><a href="https://blog.hamb4allaah.my.id/2025/12/banjir-rasisme-dan-skandal.html">banjir, rasisme dan skandal</a></h3>
+								<p>mirisnya prioritas masyarakat saat ini</p>
+							</article>
+						</div>
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; margin-top: 4em; padding-top: 2em; clear: both;">
+    <p style="margin-bottom: 1.5em; text-align: center;">diskusi atau kerja sama?</p>
+    <a href="#contact" class="button large scrolly">sinergi & kolaborasi</a>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Sinergi & Kolaborasi</h2>
+						<p>Terbuka untuk kerjasama penulisan, publikasi media, maupun diskusi strategis dalam ikatan profesional yang berkah</p>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" placeholder="Subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear Form" class="alt" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-12">
+							<hr />
+							<h3>Find me on ...</h3>
+							<ul class="social">
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<!--
+								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
+								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
+								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
+								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
+								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
+								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
+								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
+								-->
+							</ul>
+							<hr />
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; TW1NST3CH. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
