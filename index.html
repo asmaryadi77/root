@@ -7,41 +7,42 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        /* CSS Clean: Udah disatukan & dibersihkan dari error */
+        /* CSS Clean: Balik ke gaya minimalis putih elegan, tanpa merusak template */
         strong { color: #50C878 !important; font-weight: 700; }
-        .card-custom { 
-            background: #fff; 
-            border-radius: 10px; 
-            padding: 20px; 
-            margin-bottom: 20px; 
-            border: 1px solid #eee; 
-            transition: 0.3s;
+        
+        .clean-card {
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
             text-align: left;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: 0.3s;
         }
-        .card-custom:hover { 
-            transform: translateY(-5px); 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
-            border-color: #2ecc71; 
+        .clean-card:hover {
+            border-color: #50C878;
+            box-shadow: 0 8px 15px rgba(80,200,120,0.1);
+            transform: translateY(-3px);
         }
-        .hero-box {
-            background: rgba(0, 0, 0, 0.75);
-            padding: 40px 30px;
-            border-radius: 15px;
-            max-width: 700px;
-            margin: 0 auto;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        /* Responsif HP (Media Query) */
-        @media screen and (max-width: 736px) {
-            .hero-box { padding: 25px 15px; width: 95%; }
-            h1 { font-size: 1.8em !important; line-height: 1.2 !important; }
-            h2 { font-size: 1.5em !important; }
-            .wrapper { padding: 3em 1.5em !important; }
+        .clean-card h4 { margin: 0 0 10px 0; color: #333; font-size: 1.2em; font-weight: 700; }
+        .clean-card p { margin: 0 0 15px 0; font-size: 0.95em; color: #666; line-height: 1.5; }
+        .clean-card-link { color: #50C878; font-weight: bold; text-decoration: none; font-size: 0.95em; }
+        
+        /* Kartu Khusus Sesi Konsultasi (High Value) */
+        .premium-card { border: 2px solid #50C878; }
+        .premium-btn { 
+            background: #50C878; 
+            color: #fff !important; 
+            padding: 8px 20px; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            text-decoration: none; 
+            display: inline-block;
         }
     </style>
-</head> <body class="is-preload">
+</head>
+<body class="is-preload">
 
     <nav id="nav">
         <ul class="container">
@@ -52,51 +53,74 @@
         </ul>
     </nav>
 
-    <article id="top" class="wrapper style1" style="background-image: url('images/cover.jpg'); background-size: cover; background-position: center; background-attachment: fixed; text-align: center;">
+    <article id="top" class="wrapper style1" style="padding: 5em 0 3em 0; background: #fff;">
         <div class="container">
-            <div class="hero-box">
-                <header>
-                    <h1 style="color: #fff; margin-bottom: 0.5em;">The Architect of <br /><strong>be COOL Person</strong></h1>
-                    <p style="color: #ccc; font-size: 1em;">Membangun karakter, menebar manfaat. <br />Solusi hidup mandiri & teknologi ekonomi lokal.</p>
-                </header>
-                
-                <div style="margin-top: 30px;">
-                    <a href="https://blog.hamb4allaah.my.id" class="button alt" style="width: 100%; margin-bottom: 10px; display: block;">📖 Baca Jurnal</a>
-                    <a href="https://facebook.com/h4mbaAllaah" class="button alt" style="width: 100%; margin-bottom: 10px; display: block;">👥 Gabung Komunitas (4k)</a>
-                    <a href="https://wa.me/p/[ID_PRODUK]/628XXXXXXXXXX" class="button" style="width: 100%; background: #2ecc71; border: none; color: #fff !important; display: block;">🧠 Booking Sesi Diskusi (1jt/jam)</a>
-                </div>
-            </div>
+            <header>
+                <h1 style="color: #333; font-size: 2.5em; margin-bottom: 0.2em;">Halo, saya <strong>hamba Allaah</strong>.</h1>
+                <p style="color: #666; font-size: 1.2em;">Tempat berbagi ide, pemikiran, dan <strong>solusi teknologi untuk ekonomi lokal</strong>.</p>
+            </header>
+            <a href="#about" class="button large scrolly" style="margin-top: 1.5em; background: #50C878; color: #fff !important; border: none;">Lihat Apa yang Saya Lakukan</a>
         </div>
     </article>
 
-    <article id="work" class="wrapper style2">
-        <div class="container">
-            <header style="text-align: center; margin-bottom: 40px;">
-                <h2>Unit Bisnis & Layanan</h2>
-                <p>Eksekusi nyata untuk kemandirian ekonomi.</p>
-            </header>
+    <article id="about" class="wrapper style2" style="padding: 4em 0; background: #f9f9f9;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
             
-            <div class="row justify-center">
+            <header style="margin-bottom: 2.5em; text-align: center;">
+                <h2 style="color: #333; font-weight: 700;">The Architect of <br/><strong>be COOL Person</strong></h2>
+                <p style="color: #666;">Bukan sekadar menulis, tapi membangun pondasi karakter.</p>
+            </header>
+
+            <div class="row">
                 <div class="col-12">
-                    <div class="card-custom">
-                        <h4 style="color: #333; margin: 0;">💻 tw1nst3ch LAB</h4>
-                        <p style="margin: 5px 0 15px 0; font-size: 0.9em;">Servis Laptop, PC, & Otomasi Python area Garut.</p>
-                        <a href="https://tw1nst3ch.hamb4allaah.my.id" style="color: #2ecc71; font-weight: bold;">Buka Lab →</a>
+                    <div class="clean-card">
+                        <h4>📖 Jurnal dan Tulisan</h4>
+                        <p>Baca pemikiran, ide, dan perjalanan hidup be COOL.</p>
+                        <a href="https://blog.hamb4allaah.my.id" class="clean-card-link">Baca Jurnal &rarr;</a>
                     </div>
-
-                    <div class="card-custom">
-                        <h4 style="color: #333; margin: 0;">🛵 GARU7</h4>
-                        <p style="margin: 5px 0 15px 0; font-size: 0.9em;">Ojek & Kurir Lokal amanah tanpa potongan besar.</p>
-                        <a href="https://garu7.hamb4allaah.my.id" style="color: #2ecc71; font-weight: bold;">Order Ojol →</a>
+                    
+                    <div class="clean-card">
+                        <h4>👥 Komunitas Hamba Allaah</h4>
+                        <p>Bergabung bersama 4.000+ sahabat di Facebook.</p>
+                        <a href="https://facebook.com/h4mbaAllaah" class="clean-card-link">Ikuti Sekarang &rarr;</a>
                     </div>
-
-                    <div class="card-custom">
-                        <h4 style="color: #333; margin: 0;">🛒 Hamba Allaah Store</h4>
-                        <p style="margin: 5px 0 15px 0; font-size: 0.9em;">Marketplace UMKM Mandiri produk lokal Garut.</p>
-                        <a href="https://store.hamb4allaah.my.id" style="color: #2ecc71; font-weight: bold;">Belanja →</a>
+                    
+                    <div class="clean-card premium-card">
+                        <h4>🧠 Konsultasi be COOL (Sesi Diskusi)</h4>
+                        <p>Diskusi strategis blueprint hidup. <strong>Rate: 1jt/jam</strong> <em>(Negotiable)</em></p>
+                        <a href="https://wa.me/p/[ID_PRODUK]/628XXXXXXXXXX" class="premium-btn">Booking Sesi Diskusi &rarr;</a>
                     </div>
                 </div>
             </div>
+
+            <hr style="margin: 4em 0; border: 0; border-top: 1px solid #ddd;" />
+
+            <header style="margin-bottom: 2.5em; text-align: center;">
+                <h3 style="color: #333; font-weight: 700; text-transform: uppercase;">Unit Bisnis & Layanan</h3>
+            </header>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="clean-card">
+                        <h4>💻 tw1nst3ch LAB</h4>
+                        <p>Bengkel servis laptop, PC, dan otomasi Python area Garut.</p>
+                        <a href="https://tw1nst3ch.hamb4allaah.my.id" class="clean-card-link">Buka Lab &rarr;</a>
+                    </div>
+
+                    <div class="clean-card">
+                        <h4>🛵 GARU7</h4>
+                        <p>Ojek & Kurir Lokal amanah tanpa potongan besar.</p>
+                        <a href="https://garu7.hamb4allaah.my.id" class="clean-card-link">Order Ojol &rarr;</a>
+                    </div>
+
+                    <div class="clean-card">
+                        <h4>🛒 Hamba Allaah Store</h4>
+                        <p>Marketplace UMKM Mandiri produk lokal Garut.</p>
+                        <a href="https://store.hamb4allaah.my.id" class="clean-card-link">Belanja &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </article>
 
