@@ -28,8 +28,41 @@
                 display: none !important; /* Sembunyikan teks latar belakang besar di seluler biar gak ganggu visual terpotong */
             }
         }
-    </style>
-</head>
+<style>
+    /* CSS Tambahan: Ringan & Gak Ngerusak Sistem Template */
+    strong { color: #50C878 !important; font-weight: 700; }
+    .card-custom { 
+        background: #fff; 
+        border-radius: 10px; 
+        padding: 20px; 
+        margin-bottom: 20px; 
+        border: 1px solid #eee; 
+        transition: 0.3s;
+        text-align: left;
+    }
+    .card-custom:hover { 
+        transform: translateY(-5px); 
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+        border-color: #2ecc71; 
+    }
+    .hero-box {
+        background: rgba(0, 0, 0, 0.75);
+        padding: 40px 30px;
+        border-radius: 15px;
+        max-width: 700px;
+        margin: 0 auto;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+    /* Responsif HP */
+    @media screen and (max-width: 736px) {
+        .hero-box { padding: 25px 15px; width: 95%; }
+        h1 { font-size: 1.8em !important; line-height: 1.2 !important; }
+        h2 { font-size: 1.5em !important; }
+        .wrapper { padding: 3em 1.5em !important; }
+    }
+</style>
+
 <body class="is-preload">
 
     <nav id="nav">
@@ -41,76 +74,49 @@
         </ul>
     </nav>
 
-    <article id="top" class="wrapper style1" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/cover.jpg'); background-size: cover; background-position: center; background-attachment: fixed; min-height: 80vh; display: flex; align-items: center; justify-content: center; border: none; margin-bottom: 0 !important; padding: 2em 0 !important; position: relative; overflow: hidden; z-index: 1;">
-        <div class="hero-background-large-text" style="position: absolute; top: 10%; left: 0; font-size: 15em; font-weight: 900; color: rgba(255,255,255,0.03); white-space: nowrap; z-index: -1;">Hamba Allaah person</div>
-        <div class="container" style="max-width: 600px;"> <div class="hero-compact-card" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); padding: 3em; border-radius: 12px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <article id="top" class="wrapper style1" style="background-image: url('images/cover.jpg'); background-size: cover; background-position: center; background-attachment: fixed; text-align: center;">
+        <div class="container">
+            <div class="hero-box">
                 <header>
-                    <h1 style="color: #ffffff; font-size: 2.5em; margin-bottom: 0.5em;">Halo, saya <strong style="color: #50C878 !important;">hamba Allaah</strong>.</h1>
-                    <p style="color: rgba(255,255,255,0.9); font-size: 1.1em; line-height: 1.6;">Tempat berbagi ide, pemikiran, dan <strong style="color: #50C878 !important;">solusi teknologi untuk ekonomi lokal</strong>.</p>
+                    <h1 style="color: #fff; margin-bottom: 0.5em;">The Architect of <br /><strong>be COOL Person</strong></h1>
+                    <p style="color: #ccc; font-size: 1em;">Membangun karakter, menebar manfaat. <br />Solusi hidup mandiri & teknologi ekonomi lokal.</p>
                 </header>
-                <a href="#about" class="button large scrolly" style="background-color: #50C878; color: white !important; margin-top: 1.5em; border: none; font-size: 1.1em;">Learn about what I do</a>
-            </div>
-        </div>
-    </article>
-
-    <article id="about" class="wrapper style1" style="background-color: #f4f4f4; padding: 4em 0 !important; margin-top: 0 !important;">
-        <div class="container" style="max-width: 800px;"> <div class="architect-compact-card" style="background: #fff; border-radius: 12px; padding: 3em; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center;">
-                <header>
-                    <h2 style="color: #333; font-weight: 700; font-size: 2em;">The Architect of <br /><strong style="color: #50C878 !important;">be COOL Person</strong></h2>
-                </header>
-                <p style="color: #666; font-size: 1.1em; line-height: 1.8; margin-bottom: 2.5em; max-width: 600px; margin: 0 auto 2.5em;">
-                    Bukan hanya sekadar menulis, tapi membangun pondasi. Saya percaya bahwa karya yang sebenarnya bukan hanya huruf di kertas, tapi hidupnya karakter yang memberi manfaat untuk sesama.
-                </p>
-                <div style="text-align: left; margin: 0 auto; max-width: 600px;">
-                    <div style="background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 15px; color: #333;" class="card-link">
-                        <h4 style="margin: 0 0 5px 0;">📖 Jurnal dan Tulisan</h4>
-                        <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #666;">Baca pemikiran, ide, dan perjalanan hidup be COOL.</p>
-                        <a href="https://blog.hamb4allaah.my.id" style="color: #2ecc71; font-weight: bold; text-decoration: none;">Baca Jurnal →</a>
-                    </div>
-                    <div style="background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 15px; color: #333;" class="card-link">
-                        <h4 style="margin: 0 0 5px 0;">👥 Komunitas Hamba Allaah</h4>
-                        <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #666;">Bergabung bersama 4.000+ sahabat di Facebook.</p>
-                        <a href="https://www.facebook.com/h4mbaAllaah" style="color: #2ecc71; font-weight: bold; text-decoration: none;">Ikuti Sekarang →</a>
-                    </div>
-                    <div style="background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 20px; margin-bottom: 15px; color: #333; border: 2px solid #2ecc71;" class="card-link">
-                        <h4 style="margin: 0 0 5px 0;">🧠 Konsultasi be COOL</h4>
-                        <p style="margin: 0 0 10px 0; font-size: 0.9em; color: #666;">Sesi diskusi mendalam untuk blueprint hidup mandiri.</p>
-                        <a href="/konsultasi" style="color: #2ecc71; font-weight: bold; text-decoration: none;">Tanya Solusi Hidup →</a>
-                    </div>
+                
+                <div style="margin-top: 30px;">
+                    <a href="https://blog.hamb4allaah.my.id" class="button alt" style="width: 100%; margin-bottom: 10px; display: block;">📖 Baca Jurnal</a>
+                    <a href="https://facebook.com/h4mbaAllaah" class="button alt" style="width: 100%; margin-bottom: 10px; display: block;">👥 Gabung Komunitas (4k)</a>
+                    <a href="https://wa.me/p/[ID_PRODUK]/628XXXXXXXXXX" class="button" style="width: 100%; background: #2ecc71; border: none; color: #fff !important; display: block;">🧠 Booking Sesi Diskusi (1jt/jam)</a>
                 </div>
             </div>
         </div>
     </article>
 
-    <article id="work" class="wrapper style2" style="margin-top: -70px !important; position: relative; z-index: 10; padding-top: 0 !important;">
+    <article id="work" class="wrapper style2">
         <div class="container">
-            <header style="margin-bottom: 30px;">
-                <h2 style="text-align: center; color: #333; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Unit Bisnis & Layanan</h2>
+            <header style="text-align: center; margin-bottom: 40px;">
+                <h2>Unit Bisnis & Layanan</h2>
+                <p>Eksekusi nyata untuk kemandirian ekonomi.</p>
             </header>
             
-            <div style="max-width: 800px; margin: 0 auto;">
-                <div style="background: #fff; border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;" class="card-link">
-                    <div style="flex: 1; min-width: 250px;">
-                        <h4 style="margin: 0; color: #333;">💻 tw1nst3ch LAB</h4>
-                        <p style="margin: 5px 0 0; color: #666; font-size: 0.9em;">Bengkel servis laptop, PC, dan otomasi Python area Garut.</p>
+            <div class="row justify-center">
+                <div class="col-12">
+                    <div class="card-custom">
+                        <h4 style="color: #333; margin: 0;">💻 tw1nst3ch LAB</h4>
+                        <p style="margin: 5px 0 15px 0; font-size: 0.9em;">Servis Laptop, PC, & Otomasi Python area Garut.</p>
+                        <a href="https://tw1nst3ch.hamb4allaah.my.id" style="color: #2ecc71; font-weight: bold;">Buka Lab →</a>
                     </div>
-                    <a href="https://tw1nst3ch.hamb4allaah.my.id" style="color: #2ecc71; font-weight: bold; border: 1.5px solid #2ecc71; padding: 8px 20px; border-radius: 6px; text-decoration: none;">Buka Lab →</a>
-                </div>
 
-                <div style="background: #fff; border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;" class="card-link">
-                    <div style="flex: 1; min-width: 250px;">
-                        <h4 style="margin: 0; color: #333;">🛵 GARU7</h4>
-                        <p style="margin: 5px 0 0; color: #666; font-size: 0.9em;">Ojek & Kurir Lokal amanah tanpa potongan admin besar.</p>
+                    <div class="card-custom">
+                        <h4 style="color: #333; margin: 0;">🛵 GARU7</h4>
+                        <p style="margin: 5px 0 15px 0; font-size: 0.9em;">Ojek & Kurir Lokal amanah tanpa potongan besar.</p>
+                        <a href="https://garu7.hamb4allaah.my.id" style="color: #2ecc71; font-weight: bold;">Order Ojol →</a>
                     </div>
-                    <a href="https://garu7.hamb4allaah.my.id" style="color: #2ecc71; font-weight: bold; border: 1.5px solid #2ecc71; padding: 8px 20px; border-radius: 6px; text-decoration: none;">Order Ojol →</a>
-                </div>
 
-                <div style="background: #fff; border-radius: 12px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;" class="card-link">
-                    <div style="flex: 1; min-width: 250px;">
-                        <h4 style="margin: 0; color: #333;">🛒 Hamba Allaah Store</h4>
-                        <p style="margin: 5px 0 0; color: #666; font-size: 0.9em;">Marketplace UMKM Mandiri untuk produk lokal terbaik.</p>
+                    <div class="card-custom">
+                        <h4 style="color: #333; margin: 0;">🛒 Hamba Allaah Store</h4>
+                        <p style="margin: 5px 0 15px 0; font-size: 0.9em;">Marketplace UMKM Mandiri produk lokal Garut.</p>
+                        <a href="https://store.hamb4allaah.my.id" style="color: #2ecc71; font-weight: bold;">Belanja →</a>
                     </div>
-                    <a href="https://store.hamb4allaah.my.id" style="color: #2ecc71; font-weight: bold; border: 1.5px solid #2ecc71; padding: 8px 20px; border-radius: 6px; text-decoration: none;">Belanja →</a>
                 </div>
             </div>
         </div>
@@ -124,4 +130,3 @@
     <script src="assets/js/main.js"></script>
 
 </body>
-</html>
