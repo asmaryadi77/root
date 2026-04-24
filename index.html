@@ -7,63 +7,41 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        /* CSS Clean: Udah disatukan & dibersihkan dari error */
         strong { color: #50C878 !important; font-weight: 700; }
-        .button.style2 { border-color: #50C878; color: #50C878 !important; }
-        .card-link { transition: 0.3s; border: 1px solid #f0f0f0; }
-        .card-link:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important; border-color: #2ecc71; }
-
-        /* --- JURUS ANTI-KACOY SELULER (MEDIA QUERY) --- */
-        @media screen and (max-width: 480px) {
-            #top .container, #about .container {
-                padding: 1.5em !important; /* Kecilkan padding kontainer utama di seluler */
-            }
-            
-            #top .hero-compact-card, #about .architect-compact-card {
-                padding: 1.5em !important; /* Kecilkan padding kartu di seluler biar gak overflow */
-                max-width: 90% !important; /* Batasi lebar kartu di seluler biar pas di layar */
-                margin: 0 auto !important; /* Pusatkan kartu */
-            }
-
-            #top .hero-background-large-text {
-                display: none !important; /* Sembunyikan teks latar belakang besar di seluler biar gak ganggu visual terpotong */
-            }
+        .card-custom { 
+            background: #fff; 
+            border-radius: 10px; 
+            padding: 20px; 
+            margin-bottom: 20px; 
+            border: 1px solid #eee; 
+            transition: 0.3s;
+            text-align: left;
         }
-<style>
-    /* CSS Tambahan: Ringan & Gak Ngerusak Sistem Template */
-    strong { color: #50C878 !important; font-weight: 700; }
-    .card-custom { 
-        background: #fff; 
-        border-radius: 10px; 
-        padding: 20px; 
-        margin-bottom: 20px; 
-        border: 1px solid #eee; 
-        transition: 0.3s;
-        text-align: left;
-    }
-    .card-custom:hover { 
-        transform: translateY(-5px); 
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
-        border-color: #2ecc71; 
-    }
-    .hero-box {
-        background: rgba(0, 0, 0, 0.75);
-        padding: 40px 30px;
-        border-radius: 15px;
-        max-width: 700px;
-        margin: 0 auto;
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255,255,255,0.1);
-    }
-    /* Responsif HP */
-    @media screen and (max-width: 736px) {
-        .hero-box { padding: 25px 15px; width: 95%; }
-        h1 { font-size: 1.8em !important; line-height: 1.2 !important; }
-        h2 { font-size: 1.5em !important; }
-        .wrapper { padding: 3em 1.5em !important; }
-    }
-</style>
+        .card-custom:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            border-color: #2ecc71; 
+        }
+        .hero-box {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 40px 30px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: 0 auto;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
 
-<body class="is-preload">
+        /* Responsif HP (Media Query) */
+        @media screen and (max-width: 736px) {
+            .hero-box { padding: 25px 15px; width: 95%; }
+            h1 { font-size: 1.8em !important; line-height: 1.2 !important; }
+            h2 { font-size: 1.5em !important; }
+            .wrapper { padding: 3em 1.5em !important; }
+        }
+    </style>
+</head> <body class="is-preload">
 
     <nav id="nav">
         <ul class="container">
@@ -130,3 +108,4 @@
     <script src="assets/js/main.js"></script>
 
 </body>
+</html>
