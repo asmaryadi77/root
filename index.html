@@ -55,12 +55,21 @@
             border-bottom: 1px solid rgba(80, 200, 120, 0.1);
         }
         .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.4rem;
             font-weight: 700;
             color: var(--emerald);
             letter-spacing: 0.05em;
             text-decoration: none;
+        }
+        .nav-logo img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+            border-radius: 50%;
         }
         .nav-links {
             display: flex;
@@ -366,7 +375,72 @@
             margin: 0 40px;
         }
 
-        /* ===== BISNIS ===== */
+        /* ===== PARALLAX SECTION ===== */
+        .parallax-section {
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/cover.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 80px 40px;
+            text-align: center;
+        }
+        .parallax-inner {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .parallax-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        .parallax-title strong { color: var(--emerald); }
+        .parallax-desc {
+            color: rgba(255,255,255,0.85);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+        .bcp-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            text-align: left;
+        }
+        .bcp-card {
+            background: rgba(255,255,255,0.95);
+            border-radius: 12px;
+            padding: 20px 22px;
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: block;
+            border-left: 3px solid transparent;
+        }
+        .bcp-card:hover {
+            transform: translateX(6px);
+            border-left-color: var(--emerald);
+        }
+        .bcp-card h4 {
+            font-size: 0.95rem;
+            font-weight: 900;
+            margin-bottom: 4px;
+            color: #111;
+        }
+        .bcp-card p {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        .bcp-card a, .bcp-card-link {
+            font-size: 0.75rem;
+            font-weight: 900;
+            color: var(--emerald-dark);
+            text-decoration: none;
+        }
         #work { padding-top: 100px; }
 
         .bisnis-grid {
@@ -641,7 +715,10 @@
 
 <!-- NAV -->
 <nav>
-    <a href="#top" class="nav-logo">KiArka</a>
+    <a href="#top" class="nav-logo">
+    <img src="images/logo.jpg" alt="KiArka">
+    KiArka
+</a>
     <ul class="nav-links">
         <li><a href="#top">Home</a></li>
         <li><a href="#work">Bisnis</a></li>
@@ -660,7 +737,7 @@
                 Hidup yang <em>by design</em>,<br>bukan by default.
             </h1>
             <p class="hero-sub">
-                Bukan sekadar konsultan. Selama 20 tahun setelah memiliki nama baru, saya rebuild believe system sampai menghasilkan framework yang sekarang <strong>terbukti mengubah cara orang menjalani hidup dan bisnisnya</strong> — dari nol sampai jalan sendiri.
+                Bukan sekadar konsultan. Selama 20 tahun gw bangun framework yang udah <strong>terbukti mengubah cara orang menjalani hidup dan bisnisnya</strong> — dari nol sampai jalan sendiri.
             </p>
             <div class="hero-cta">
                 <a href="#work" class="btn-primary">Lihat Ekosistem</a>
@@ -670,7 +747,8 @@
 
         <div class="hero-right">
             <!-- Promo Asuransi -->
-            <a href="/aset77jt" class="promo-card">   
+            <a href="/aset77jt" class="promo-card">
+                <div class="promo-label">☕ Proteksi Finansial</div>
                 <div class="promo-text">
                     Nabung <strong>7 ribu rupiah sehari</strong>, tapi bisa jagain aset keluarga sampai <strong>77 juta?</strong>
                 </div>
@@ -691,22 +769,22 @@
             <div class="proof-strip">
                 <div class="proof-item">
                     <span class="proof-num">20+</span>
-                    <span class="proof-desc">Tahun Pengalaman Seorang Profesional</span>
+                    <span class="proof-desc">Tahun Pengalaman</span>
                 </div>
                 <div class="proof-divider"></div>
                 <div class="proof-item">
-                    <span class="proof-num">Mentor</span>
-                    <span class="proof-desc">Advisor Digital Data</span>
+                    <span class="proof-num">7K+</span>
+                    <span class="proof-desc">Komunitas Yusep</span>
                 </div>
                 <div class="proof-divider"></div>
                 <div class="proof-item">
-                    <span class="proof-num">Advisor</span>
-                    <span class="proof-desc">oyusep (edutech)</span>
+                    <span class="proof-num">14th</span>
+                    <span class="proof-desc">Framework BCP</span>
                 </div>
                 <div class="proof-divider"></div>
                 <div class="proof-item">
-                    <span class="proof-num">Advisor</span>
-                    <span class="proof-desc">gaia garut (UMKM marketplace)</span>
+                    <span class="proof-num">4K+</span>
+                    <span class="proof-desc">Followers FB</span>
                 </div>
             </div>
         </div>
@@ -715,7 +793,34 @@
 
 <div class="divider"></div>
 
-<!-- BISNIS -->
+<!-- PARALLAX BCP SECTION -->
+<div class="parallax-section">
+    <div class="parallax-inner">
+        <h2 class="parallax-title">The Architect of <br><strong>be COOL Person</strong></h2>
+        <p class="parallax-desc">
+            Bukan hanya sekadar menulis, tapi membangun pondasi. Gw percaya bahwa karya yang sebenernya bukan hanya huruf di kertas, tapi hidupnya karakter yang memberi manfaat untuk sesama.
+        </p>
+        <div class="bcp-cards">
+            <a href="https://blog.kiarka.id" class="bcp-card">
+                <h4>📖 Blog & Knowledge Hub</h4>
+                <p>Baca pemikiran, framework, dan hikmah di balik setiap kejadian.</p>
+                <span class="bcp-card-link">Mulai Baca →</span>
+            </a>
+            <a href="https://www.facebook.com/kiarkaid" class="bcp-card" target="_blank">
+                <h4>👥 Komunitas KiArka</h4>
+                <p>Bergabung dengan 4000+ yang challenge toxic culture.</p>
+                <span class="bcp-card-link">Mari Bergabung →</span>
+            </a>
+            <a href="https://wa.me/p/34984454914536341/6281543333877" class="bcp-card" style="border: 2px solid var(--emerald);">
+                <h4>🧠 Konsultasi Life Framework</h4>
+                <p>Sesi diskusi mendalam untuk blueprint hidup mandiri.</p>
+                <span class="bcp-card-link">Tanya Solusi Hidup →</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="divider"></div>
 <section id="work">
     <span class="section-label reveal">Unit Bisnis</span>
     <h2 class="section-title reveal">Ekosistem <em>Kiarka</em></h2>
@@ -869,3 +974,4 @@
 
 </body>
 </html>
+
